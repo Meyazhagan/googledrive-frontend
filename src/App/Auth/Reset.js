@@ -29,7 +29,8 @@ function ResetPassword() {
 
     const formik = useFormik({
         initialValues: {
-            email: "",
+            password: "",
+            conformPassword: ""
         },
         validate: (value) => validate(value, type.PASSWORD),
         onSubmit: handleSubmit,
