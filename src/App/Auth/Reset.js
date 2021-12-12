@@ -31,7 +31,7 @@ function ResetPassword() {
         initialValues: {
             email: "",
         },
-        validate: (value) => validate(value, type.EMAIL),
+        validate: (value) => validate(value, type.PASSWORD),
         onSubmit: handleSubmit,
     });
     return (
