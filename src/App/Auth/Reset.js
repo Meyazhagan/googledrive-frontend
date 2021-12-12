@@ -54,7 +54,7 @@ function ResetPassword() {
                         field="conformPassword"
                         formik={formik}
                     />
-                    <FormAction formik={formik} action={"send mail"} secondary={"clear"} />
+                    <FormAction formik={formik} action={"Reset"} secondary={"clear"} />
                 </form>
             </FormCard>
             <div className="text-center mt-4">
