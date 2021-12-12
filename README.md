@@ -1,6 +1,6 @@
-# Tailwind react starter projects
+# Google Drive Clone
 
-Tailwind starter template
+Google Drive Clone
 
 ```
 npm i
