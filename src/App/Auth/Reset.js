@@ -29,9 +29,10 @@ function ResetPassword() {
 
     const formik = useFormik({
         initialValues: {
-            email: "",
+            password: "",
+            conformPassword: ""
         },
-        validate: (value) => validate(value, type.EMAIL),
+        validate: (value) => validate(value, type.PASSWORD),
         onSubmit: handleSubmit,
     });
     return (
@@ -53,7 +54,7 @@ function ResetPassword() {
                         field="conformPassword"
                         formik={formik}
                     />
-                    <FormAction formik={formik} action={"send mail"} secondary={"clear"} />
+                    <FormAction formik={formik} action={"Reset"} secondary={"clear"} />
                 </form>
             </FormCard>
             <div className="text-center mt-4">

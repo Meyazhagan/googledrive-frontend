@@ -1,6 +1,6 @@
-# Tailwind react starter projects
+# Google Drive Clone
 
-Tailwind starter template
+Google Drive Clone
 
 ```
 npm i
@@ -14,4 +14,11 @@ npm start
  npm build
 ```
 
-Deployed Link [click here]() - []()
+
+Frontend Source Code Link [click here](https://github.com/Meyazhagan/googledrive-frontend) - [https://github.com/Meyazhagan/googledrive-frontend](https://github.com/Meyazhagan/googledrive-frontend)
+
+Frontend Deployed Link [click here](https://googledrive-frontend-meyazhagan.netlify.app) - [https://googledrive-frontend-meyazhagan.netlify.app](https://googledrive-frontend-meyazhagan.netlify.app)
+
+Backend Source Code Link [click here](https://github.com/Meyazhagan/googledrive-backend) - [https://github.com/Meyazhagan/googledrive-backend](https://github.com/Meyazhagan/googledrive-backend)
+
+Backend Deployed Link [click here](https://google-drive-backend.herokuapp.com/) - [https://google-drive-backend.herokuapp.com/](https://google-drive-backend.herokuapp.com)
