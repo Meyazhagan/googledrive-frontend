@@ -40,7 +40,7 @@ const schema = {
     }),
 
     PASSWORD: Joi.object({
-        password: Joi.string().required().label("Password"),
+        password: Joi.string().min(5).max(50).required().label("Password"),
         conformPassword: Joi.ref("password"),
     }),
 

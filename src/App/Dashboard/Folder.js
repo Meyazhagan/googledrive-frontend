@@ -28,7 +28,7 @@ function Folder() {
                 pathIds.push(folder);
                 setPaths(pathIds);
             } catch (err) {
-                history.push("/");
+                history.push("/login");
             }
         },
         // eslint-disable-next-line
