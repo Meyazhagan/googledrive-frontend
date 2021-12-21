@@ -78,8 +78,8 @@ function Folder() {
                                 }}>
                                 <div
                                     className="p-3 border border-gray-300
-                            cursor-pointer rounded-md select-none hover:bg-blue-50
-                            flex gap-4 items-center">
+                                    cursor-pointer rounded-md select-none hover:bg-blue-50
+                                    flex gap-4 items-center">
                                     <FaFolder className="text-gray-500 text-xl" />
                                     <span className="text-sm">{folder.folderName}</span>
                                 </div>
@@ -92,22 +92,27 @@ function Folder() {
                         {subFile.map((file, i) => (
                             <div
                                 className="col-span-6 md:col-span-4
-                    lg:col-span-3 bg-red-30"
+                                lg:col-span-3 bg-red-30 cursor-pointer"
                                 key={i}>
-                                <div
-                                    className="border border-gray-300
-                        overflow-hidden bg-gray-100 items-center
-                        rounded-md flex flex-col justify-between">
-                                    <div className="p-10">
-                                        <BsImage className="text-gray-500 text-8xl mx-auto" />
+                                <a
+                                    href={`${process.env.REACT_APP_BACKEND}/object/${file.key}`}
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    <div
+                                        className="border border-gray-300
+                                    overflow-hidden bg-gray-100 items-center
+                                    rounded-md flex flex-col justify-between">
+                                        <div className="p-10">
+                                            <BsImage className="text-gray-500 text-8xl mx-auto" />
+                                        </div>
+                                        <div className="flex items-center bg-white p-4 gap-4 w-full">
+                                            <CgLoadbarDoc className="text-blue-700 text-xl" />
+                                            <span className="text-sm font-semibold text-gray-700">
+                                                {file.fileName}
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div className="flex items-center bg-white p-4 gap-4 w-full">
-                                        <CgLoadbarDoc className="text-blue-700 text-xl" />
-                                        <span className="text-sm font-semibold text-gray-700">
-                                            {file.fileName}
-                                        </span>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         ))}
                     </div>
