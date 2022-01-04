@@ -5,9 +5,13 @@ import { Login, Forgot, Register, ResentVerification, ResetPassword } from "./Ap
 import PrivateRouter from "./components/PrivateRouter";
 import Home from "./App/Dashboard/Home";
 import Drive from "./App/Dashboard/Drive";
-import "react-toastify/dist/ReactToastify.css";
 import VerifyUser from "./App/Auth/VerifyUser";
+import { loadProgressBar } from "axios-progress-bar";
 import { FolderProvider } from "./Context/FolderContext";
+import "react-toastify/dist/ReactToastify.css";
+import "axios-progress-bar/dist/nprogress.css";
+
+loadProgressBar();
 
 function App() {
     return (
